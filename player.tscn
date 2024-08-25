@@ -7,11 +7,18 @@
 radius = 46.1736
 
 [node name="Player" type="RigidBody2D"]
+gravity_scale = 0.0
 script = ExtResource("1_yna3m")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.42, 0.42)
 texture = ExtResource("1_vjc5q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.42, 0.42)
 shape = SubResource("CircleShape2D_2clrw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.755, 1.755)
+position_smoothing_enabled = true
